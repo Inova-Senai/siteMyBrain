@@ -1,15 +1,19 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+}
 :root {
   /* Font Family  */
   --font-family: "Poppins", sans-serif;
-  --logo-font-family: "Volkhov", serif;
+  --logo-font-family: "oswald", serif;
 
   /* Colors  */
-  --gray-text: #8b888899;
-  --light-shade-gray: #efefef;
-  --dark-shade-gray: #e4e4e4;
-  --yellow: #ffe26d;
-  --purple: #61497b;
-  --dark-purple: #3d2a52;
+  --gray-text: #161616;
+  --light-shade-gray: #161616;
+  --dark-shade-gray: #161616;
+  --yellow: #161616;
+  --purple:   ;
+  --dark-purple: #4495b3;
 }
 
 * {
@@ -30,30 +34,22 @@ html {
 /* ___________________________________________ Home ___________________________________________  */
 #home {
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #BFD7E0;
+  background: url(/img/a.mp4);
 }
 
-.img4 {
-  background: url("../img/home-carousel/sunset-sky.jpg");
-}
-.img3 {
-  background: url("../img/home-carousel/night-sky.jpg");
-}
-.img2 {
-  background: url("../img/home-carousel/red-sonw-mountain.jpg");
-}
-.img4 {
-  background: url("../img/home-carousel/red-mountain.jpg");
-}
+
 
 .home-carousel-img {
-  min-height: 100vh;
-  width: 100vw;
   position: absolute;
   top: 0;
-  left: 0;
+  width: 250px;
+  margin-top: 150px;
+  margin-left: 600px;
+  border-radius: 90px;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -999;
@@ -77,12 +73,14 @@ html {
 .nav-logo {
   flex-basis: 10%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   font-size: 1.3rem;
-  color: #fff;
+  top: 0px;
+  color: #2C6175;
   font-family: var(--logo-font-family);
   letter-spacing: 2px;
+
 }
 
 .navlinks {
@@ -93,7 +91,7 @@ html {
 
 .navlink {
   text-decoration: none;
-  color: #fff;
+  color: #161616;
   cursor: pointer;
   transition: 0.2s linear;
 }
@@ -104,7 +102,14 @@ html {
 }
 
 .nav-logo-text {
-  cursor: pointer;
+  position: absolute;
+  max-width:300px;
+  max-height:250px;
+  width: auto;
+  height: auto;
+  top: -50px;
+  left: 160px;
+
 }
 
 .navlink:hover {
@@ -117,21 +122,22 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #fff;
+ 
 }
 
 .home-head-text {
-  font-size: 3rem;
+  font-size: 4.5rem;
   letter-spacing: 2px;
   word-spacing: 3px;
-  line-height: 3.5rem;
+  line-height: 1.5rem;
+   color: #2C6175;
 }
 
 .home-sub-text {
   opacity: 0.75;
   word-spacing: 2px;
-  width: 75%;
-  font-size: 1.1rem;
+  width: 100%;
+  font-size: 1.3rem;
 }
 
 .home-btn {
@@ -185,14 +191,18 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 85%;
+  width: 100%;
   color: var(--gray-text);
   font-weight: 500;
   cursor: default;
 }
 
 .wb-text {
-  flex-basis: 60%;
+  opacity: 0.75;
+  word-spacing: 2px;
+  width: 105%;
+  font-size: 1.1rem;
+  letter-spacing: 12%;
 }
 .wb-img {
   flex-basis: 20%;
@@ -232,6 +242,7 @@ html {
   font-size: 0.9rem;
   text-transform: uppercase;
   cursor: default;
+  color: #2C6175;
 }
 
 .wc-text {
@@ -550,116 +561,60 @@ html {
 }
 
 .ztm-img-1 {
-  background: url("../img/team/camille-seo-monster.jpg") no-repeat;
+  background: url("../img/team/pallu.jpeg");
   background-size: cover;
   border-radius: 50%;
+  background-position: center;
+  background-size: contain;
+  background-size: 150px;
+
 }
 
-.ztm-img-1:hover {
-  background: linear-gradient(
-      to right,
-      rgba(97, 73, 123, 0.5),
-      rgba(97, 73, 123, 0.6)
-    ),
-    url("../img/team/camille-seo-monster.jpg") no-repeat;
-  background-size: cover;
-  cursor: pointer;
-}
-
-.ztm-img:hover .ztm-social-icon {
-  width: 85%;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-evenly;
-  color: #fff;
-}
-.ztm-social-icon .ztm-fab:hover {
-  color: #fff;
-  transform: translateY(-5px);
-}
-
-.ztm-social-icon a {
-  color: #fff;
-  cursor: pointer;
-  text-decoration: none;
-}
 
 .ztm-img-2 {
-  background: url("../img/team/christian-creative-head.jpg");
+  background: url("../img/team/ana.jpg");
   background-size: cover;
   border-radius: 50%;
-}
-.ztm-img-2:hover {
-  background: linear-gradient(
-      to right,
-      rgba(97, 73, 123, 0.5),
-      rgba(97, 73, 123, 0.6)
-    ),
-    url("../img/team/christian-creative-head.jpg") no-repeat;
+  background-position: top;
   background-size: cover;
-  cursor: pointer;
 }
+
 .ztm-img-3 {
-  background: url("../img/team/serene-Marketing-Manager.jpg");
+  background: url("../img/team/bea.JPG");
   background-size: cover;
   border-radius: 50%;
+  background-size: contain;
+  background-position: top;
+  background-size: 140px;
 }
-.ztm-img-3:hover {
-  background: linear-gradient(
-      to right,
-      rgba(97, 73, 123, 0.5),
-      rgba(97, 73, 123, 0.6)
-    ),
-    url("../img/team/serene-Marketing-Manager.jpg") no-repeat;
-  background-size: cover;
-  cursor: pointer;
-}
+
 .ztm-img-4 {
-  background: url("../img/team/emilia-art-director.jpg");
+  background: url("../img/team/bernardo.png");
+  background-size: cover;
+  background-position: top;
   background-size: cover;
   border-radius: 50%;
+
 }
-.ztm-img-4:hover {
-  background: linear-gradient(
-      to right,
-      rgba(97, 73, 123, 0.5),
-      rgba(97, 73, 123, 0.6)
-    ),
-    url("../img/team/emilia-art-director.jpg") no-repeat;
-  background-size: cover;
-  cursor: pointer;
-}
+
+
 .ztm-img-5 {
-  background: url("../img/team/george-senior-designer.jpg");
+  background: url("../img/team/ash2.jpeg");
   background-size: cover;
   border-radius: 50%;
-}
-.ztm-img-5:hover {
-  background: linear-gradient(
-      to right,
-      rgba(97, 73, 123, 0.5),
-      rgba(97, 73, 123, 0.6)
-    ),
-    url("../img/team/george-senior-designer.jpg") no-repeat;
+  background-position: top;
   background-size: cover;
-  cursor: pointer;
+ 
 }
+
 .ztm-img-6 {
-  background: url("../img/team/ariana-web-developer.png");
+  background: url("../img/team/dani.jpg");
   background-size: cover;
   border-radius: 50%;
-}
-.ztm-img-6:hover {
-  background: linear-gradient(
-      to right,
-      rgba(97, 73, 123, 0.5),
-      rgba(97, 73, 123, 0.6)
-    ),
-    url("../img/team/ariana-web-developer.png") no-repeat;
+  background-position: top;
   background-size: cover;
-  cursor: pointer;
 }
+
 .ztm-img img {
   width: 100%;
   border-radius: 50%;
@@ -991,7 +946,7 @@ html {
 #footer {
   min-height: 30vh;
   width: 100vw;
-  background-color: #a3d7e5;
+  background-color: #BFD7E0;
   display: flex;
   align-items: center;
   justify-content: center;
