@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../Downloads/Responsive-landing-page/css"
+		},
+		{
+			"path": "../../Downloads/Responsive-landing-page/design"
+		},
+		{
+			"path": "../../Downloads/Responsive-landing-page/img"
+		},
+		{
+			"path": "../../Downloads/Responsive-landing-page/js"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "js"
+	}
+}
